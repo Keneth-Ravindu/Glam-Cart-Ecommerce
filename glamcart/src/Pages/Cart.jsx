@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Cart() {
+const Cart = () => {
   return (
     <div>
       
     </div>
   )
 }
+
+export default Cart
+

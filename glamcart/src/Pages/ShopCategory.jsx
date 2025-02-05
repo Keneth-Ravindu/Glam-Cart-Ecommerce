@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function ShopCategory() {
+const ShopCategory = () => {
   return (
     <div>
       
     </div>
   )
 }
+
+export default ShopCategory
