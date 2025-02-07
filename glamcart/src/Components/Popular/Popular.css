@@ -32,12 +32,21 @@
     margin-right: auto;
 }
 
+.popular-item .item {
+    perspective: 1000px;
+}
+
 .popular-item img {
     width: auto;
     height: 300px;
     border-radius: 12px;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* 3D Hover Effect */
+.popular-item .item:hover img {
+    transform: rotateY(10deg) translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.5);
 }
 
 
