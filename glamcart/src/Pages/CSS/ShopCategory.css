@@ -73,6 +73,9 @@
     width: 85%;
     max-width: 1200px;
     margin-top: 30px;
+    margin-right: auto;
+    margin-left: 230px;
+    
 }
 
 .shopcategory-loadmore{

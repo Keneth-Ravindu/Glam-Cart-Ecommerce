@@ -12,7 +12,7 @@
     cursor: pointer;
     text-align: center;
     position: relative;
-    /* Added for proper positioning of the prices */
+    margin-left: 100px;  
 }
 
 .item:hover {
