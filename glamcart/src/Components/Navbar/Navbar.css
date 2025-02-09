@@ -15,8 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px 60px;
-    background: rgba(255, 255, 255, 0);
-    /* Semi-transparent black */
+    background: rgba(57, 57, 57, 0);
     color: white;
     position: fixed;
     width: 100%;
@@ -40,7 +39,7 @@ body {
     color: #f8b400;
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: uppercase;  /* Gold accent */
+    text-transform: uppercase; 
 }
 
 .nav-logo img {

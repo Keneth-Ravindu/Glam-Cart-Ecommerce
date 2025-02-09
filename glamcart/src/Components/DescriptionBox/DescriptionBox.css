@@ -1,0 +1,56 @@
+/* Overall container */
+.descriptionbox {
+    background: #1c1c1c;
+    /* Dark background */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigator container */
+.descriptionbox-navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ff4141;
+    /* Red accent underline */
+    margin-bottom: 20px;
+}
+
+/* Individual navigator tabs */
+.descriptionbox-nav-box {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Spacing between navigator tabs */
+.descriptionbox-nav-box:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Hover effect on active tab */
+.descriptionbox-nav-box:hover {
+    color: #ff4141;
+}
+
+/* Faded style for inactive tabs */
+.descriptionbox-nav-box.fade {
+    opacity: 0.6;
+}
+
+/* Description text styling */
+.descriptionbox-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify;
+    margin: 0;
+}

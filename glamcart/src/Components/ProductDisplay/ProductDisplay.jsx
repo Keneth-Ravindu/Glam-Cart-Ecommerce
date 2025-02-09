@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ProductDisplay.css'
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
 
 const ProductDisplay = (props) => {
     const { product } = props;
+    const { addToCart } = useContext(ShopContext);
   return (
     <div className='productdisplay'>
           <div className="productdisplay-left">
@@ -37,7 +39,8 @@ const ProductDisplay = (props) => {
                       LKR {product.new_price}
                   </div>
                   <div className="className="productdisplay-right-description>
-                      description
+                      Clothes are a way to express your unique style while providing comfort and practicality.
+                      They blend fashion with functionality, helping you feel confident and ready for any occasion.
                   </div>
                   <div className="className="productdisplay-right-size>
                       <h1>Select Size</h1>
@@ -49,7 +52,7 @@ const ProductDisplay = (props) => {
                           <div>XXL</div>
                       </div>
                   </div>
-                  <button>Add To Cart</button>
+                  <button onClick={()=>{addToCart(product.id)}} >Add To Cart</button>
                     <p className="productdisplay-right-category">
                       <span>Category: </span>Women, T-Shirt, Crop Top
                     </p>

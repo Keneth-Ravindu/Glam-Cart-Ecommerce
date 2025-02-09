@@ -1,0 +1,217 @@
+/* Overall Container for CartItems */
+.cartitems {
+    background-color: #1c1c1c;
+    /* Deep black */
+    color: #fff;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+/* Header Row Styling using Grid */
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr 1fr 1fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ff4141;
+    /* Red underline */
+    margin-bottom: 20px;
+}
+
+.cartitems-format-main p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Each Cart Item Row Styling */
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr 1fr 1fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.cartitems-format:hover {
+    background: rgba(255, 65, 65, 0.1);
+}
+
+.cartitems-format p {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Product Image Styling */
+.carticon-product-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #ff4141;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+/* Quantity Button Styling */
+.cartitems-quantity {
+    background-color: #ff4141;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    justify-self: center;
+    transition: background 0.3s ease;
+}
+
+.cartitems-quantity:hover {
+    background-color: #e63946;
+}
+
+/* Remove Icon Styling */
+.cartitems-format img:last-child {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    justify-self: center;
+    transition: transform 0.3s ease;
+}
+
+.cartitems-format img:last-child:hover {
+    transform: scale(1.2);
+}
+
+/* Horizontal Rule Styling */
+.cartitems hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+}
+
+/* --------------------------- */
+/* Cart Total Section */
+/* --------------------------- */
+
+/* Container for Cart Total (centered) */
+.cartitems-down {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Cart Total Box with vertical stacking */
+.cartitems-total {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Heading for Cart Total */
+.cartitems-total h1 {
+    font-size: 24px;
+    color: #ff4141;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Each Row in Cart Total (stacked vertically) */
+.cartitems-total-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.cartitems-total-item span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.cartitems-total-item p {
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Optionally, add an HR between rows for clarity */
+.cartitems-total-item hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+}
+
+/* Checkout Button */
+.cartitems-total button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4141;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cartitems-total button:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+/* Promo Code Section */
+.cartitems-promocode {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Promo Code Input & Button (stacked vertically) */
+.cartitems-promobox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.cartitems-promobox input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cartitems-promobox button {
+    padding: 10px;
+    background-color: #ff4141;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cartitems-promobox button:hover {
+    background-color: #e63946;
+}
